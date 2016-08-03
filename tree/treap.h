@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cstdlib>
+#ifndef __TREAP_H__
+#define __TREAP_H__
 
 template <class T>
 class TreapNode {
@@ -17,3 +17,4 @@ class TreapNode {
         TreapNode* Delete(T x);
 };
 
+#endif
