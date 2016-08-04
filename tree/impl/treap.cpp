@@ -18,7 +18,6 @@ namespace ninja {
         return value;
     }
 
-
     /*
      * Implement functions required by Treap
      */
