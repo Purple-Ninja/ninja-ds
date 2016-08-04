@@ -7,16 +7,20 @@ namespace ninja {
     template <class T>
     class TreapNode {
         private:
-            TreapNode *left;
-            TreapNode *right;
             T value;
             int priority;
 
         public:
+            // Declare Variables
+            TreapNode *left;
+            TreapNode *right;
+
+            // Declare operations
             TreapNode(T x);
             TreapNode* Insert(T x);
             TreapNode* Delete(T x);
             TreapNode* Query(T x);
+            T getValue();
     };
 
     template <class T>
