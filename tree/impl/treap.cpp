@@ -31,11 +31,11 @@ namespace ninja {
 
         if (x->getValue() <= y->getValue()) {
             x->right = Merge(x->right, y);
+            return x;
         } else {
             y->left = Merge(x, y->left);
+            return y;
         }
-
-        return NULL;
     }
 }
 
